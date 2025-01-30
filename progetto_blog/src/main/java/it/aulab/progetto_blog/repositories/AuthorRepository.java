@@ -3,11 +3,11 @@ package it.aulab.progetto_blog.repositories;
 import java.util.List;
 
 import org.springframework.data.jpa.repository.Query;
-import org.springframework.data.repository.CrudRepository;
+import org.springframework.data.repository.ListCrudRepository;
 
 import it.aulab.progetto_blog.models.Author;
 
-public interface AuthorRepository extends CrudRepository<Author, Long> {
+public interface AuthorRepository extends ListCrudRepository<Author, Long> {
     //Se scrivo ByName la proprietà nel modello author SI DEVE CHIAMARE "name"
     List<Author> findByName(String firstname);
 
