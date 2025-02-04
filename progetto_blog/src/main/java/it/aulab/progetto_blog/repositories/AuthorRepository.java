@@ -15,6 +15,8 @@ public interface AuthorRepository extends ListCrudRepository<Author, Long> {
 
     List<Author> findByNameAndSurname(String name, String surname);
 
+    List<Author> findByEmail(String email);
+
     //Query nativa, perchè utilizza sql PURO
     @Query(value = "SELECT * FROM authors a WHERE a.firstname = 'Giuseppe'", nativeQuery = true)
     List<Author> authorsWithSpecifiedName();

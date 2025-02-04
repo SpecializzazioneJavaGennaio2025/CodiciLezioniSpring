@@ -13,7 +13,7 @@ import it.aulab.progetto_blog.repositories.CommentRepository;
 
 @Controller
 @RequestMapping("/comments")
-public class CommentController {
+public class CommentRestController {
  @Autowired
     private CommentRepository commentRepository;
     
