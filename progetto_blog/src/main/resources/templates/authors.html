@@ -21,7 +21,16 @@
                 <a th:href="@{/authors/create}" class="btn btn-primary m-2">
                     <i class="fa-solid fa-plus"></i>
                 </a>
+                <!-- form di logout -->
             </div>
+        </div>
+        <div class="row">
+            <form th:action="@{/logout}" method="post" class="ml-auto">
+                <button type="submit" class="btn btn-danger">
+                    <i class="fa-solid fa-right-from-bracket"></i>
+                    logout
+                </button>
+            </form>
         </div>
     </div>
     
